@@ -1,0 +1,9 @@
+        if(prepnd){
+            AltList[0] = num;
+            for(var i = 0; i<mainList.length; i++){
+                AltList[i+1] = mainList[i];
+            }
+            return AltList;
+        } else {
+
+        }

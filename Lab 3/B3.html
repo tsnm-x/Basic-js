@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="B3.js"></script>
+    </head>
+    <body>
+        <form id = "f1" >
+            <label for="usrnm">Username</label><input id = "usrnm" type="text">
+            <label for="pwd">Password</label><input id = "pwd" type="text">
+            <input type="submit" id = "sbmt">
+        </form>
+
+        <script>
+            
+            var tmout = new Event("timeout");
+            document.getElementById("f1").addEventListener("timeout", submitConfirm);
+            setTimeout(function(){
+                document.getElementById("f1").dispatchEvent(tmout);
+            }, 30000);
+
+
+            function submitConfirm(){
+                var sbconfirm = confirm("Are you welling to submit info?");
+                if(sbconfirm){
+                    document.forms[0].submit();
+                }
+            }
+        </script>
+    </body>
+</html>

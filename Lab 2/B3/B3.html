@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            #bkgrd {
+                border-style: solid;
+                border-width: 2px;
+                border-color: "black";
+                width: 400px;
+                height: 400px;
+                text-align: center;
+                position: relative;
+            }
+            .imgs{
+                position: absolute;
+                object-position: 50% 50%;
+            }
+
+
+        </style>
+        <script src="B3.js"></script>
+    </head>
+    <body>
+        <div id="bkgrd">
+            <img src="icon1.gif" class="imgs"/>
+            <img src="icon2.gif" class="imgs"/>
+            <img src="TOP.jpg" class="imgs"/>
+        </div>
+        <div>
+            <input type="button" value="move" id="btn" onclick="moveAll()">
+            <input type="button" value="reset" onclick="resetAll()">
+        </div>
+    </body>
+</html>
